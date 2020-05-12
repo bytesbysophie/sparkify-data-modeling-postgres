@@ -27,20 +27,11 @@ def create_database():
     return cur, conn
 
 
-def drop_tables(cur, conn):
+def execute_sql_queries(queries, cur, conn):
     """
-    Drops each table using the queries in `drop_table_queries` list.
+    Execute each qeuery in the queries list.
     """
-    for query in drop_table_queries:
-        cur.execute(query)
-        conn.commit()
-
-
-def create_tables(cur, conn):
-    """
-    Creates each table using the queries in `create_table_queries` list. 
-    """
-    for query in create_table_queries:
+    for query in queries:
         cur.execute(query)
         conn.commit()
 
@@ -59,9 +50,9 @@ def main():
     - Finally, closes the connection. 
     """
     cur, conn = create_database()
-    
-    drop_tables(cur, conn)
-    create_tables(cur, conn)
+
+    execute_sql_queries(drop_table_queries, cur, conn)
+    execute_sql_queries(create_table_queries, cur, conn)
 
     conn.close()
 
