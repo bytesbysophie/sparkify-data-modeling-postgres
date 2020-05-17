@@ -41,4 +41,4 @@ The key parts of the project are:
 * test.ipynb: With this notebook, the result of the etl process can be tested
 
 ## Authors and Acknowledgements <a name="Authors-Acknowledgements"></a>
-This project has been implemented as part of the Udacity Data Scientist Nanodegree program. The data has been provided by Udacity accordingly as well as the project structure/ file templates.
+This project has been implemented as part of the Udacity Data Engineering Nanodegree program. The data has been provided by Udacity accordingly as well as the project structure/ file templates.
