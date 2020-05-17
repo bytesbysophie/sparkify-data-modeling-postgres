@@ -7,10 +7,11 @@
 4. [Authors and Acknowledgements](#Authors-Acknowledgements)
 
 ## Installation <a name="Installation"></a>
-Following libraries must be installed for running the notebook locally:
+Following libraries must be installed for running the notebooks and scripts locally:
 
     - pandas
     - psycopg2
+    - ipython-sql
 
 Additionally, a local postgres installation is needed with the following setup (alternatively you can change the connection details in create_tables.py to match your existing setup):
 
